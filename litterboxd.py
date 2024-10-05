@@ -128,7 +128,7 @@ def main():
     load_data()
 
     # Bot Token (You should use environment variables for security)
-    TOKEN = '6035365994:AAEVjWKm_o6R8yLFEOCmC1kaaASXmAu1An8'
+    TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
     # Create the application and add the handlers
     application = ApplicationBuilder().token(TOKEN).build()
